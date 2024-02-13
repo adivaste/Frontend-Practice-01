@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+header{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: crimson; */
+    backdrop-filter: blur(200px);
+    position: fixed;
+    z-index: 100;
+}
+
+header .navbar{
+    display: flex;
+    gap: 50px;
+}
+header a{
+    margin:0px 60px;
+}
+header .navbar li{
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #767676;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+header .navbar li:hover{
+    color: #333;
+    scale: 1.03;
+}
+
+header .download{
+    font-size: 18px;
+    background-color: #04ddb2;
+    width: fit-content;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 0px 60px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+header .download:hover{
+    scale: 1.05;
+}
+
+main{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h1{
+    font-size: 65px;
+    text-align: center;
+    margin-top: 60px;
+    font-weight: 700;
+    color: #333;
+}
+main h2{
+    text-align: center;
+    color: #333;
+    font-weight: 425;
+    margin-top: 15px;
+}
+main .image-cover img{
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: -99;
+}
+main .image-cover img:hover{
+    scale: 1.03;
+    z-index: -99;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+main .image-cover{
+    width: 100%;
+    /* overflow : hidden; */
+    padding: 0px 200px;
+    margin: 40px 0px;
+}
+main .download{
+    font-size: 20px;
+    background-color: #04ddb2;
+    width: fit-content;
+    padding: 15px 35px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    margin: 0px 40px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.bottom-heading{
+    margin: 15px 0px;
+}
+
+.last-word{
+    color: #04ddb2;
+}
+
+footer{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    padding: 60px 0px;
+    margin: 0px auto;
+    border-top: 0.1px solid #bfbfbf;
+    margin-top: 80px;
+}
+footer .footer-col-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 5px;
+}
+
+.footer-col-2-title, .footer-col-5-title, .footer-col-3-title, .footer-col-4-title{
+    font-size: 18px;
+    color: black;
+    font-weight: 550;
+    margin-bottom: 30px;
+}
+.footer-col-2-links, .footer-col-3-links, .footer-col-4-links, .footer-col-5-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer li{
+    color: #333;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+footer li:hover{
+    scale: 1.05;
+}
+
+footer .footer-col-1 h6{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 8px;
+    color: #333;
+}
+
+footer .footer-col-5{
+    display: flex;
+    gap: 10px;
+}
+footer .footer-col-5 svg{
+    background-color: #04ddb2;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+footer .footer-col-5 svg:hover{
+    scale: 1.05;   
+}
+main .download:hover{
+    scale: 1.05;
+}
+
+.pop-up{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    background-color: #33333398;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+iframe{
+    width: 76%;
+    height: 94%;
+    border-radius: 15px;
+}
+.close-button{
+    background-color: transparent;
+    border: none;
+    color: rgb(179, 179, 179);
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
